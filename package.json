@@ -3,7 +3,7 @@
     "dev": "vite",
     "build": "vite build --debug",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "vue": "^3.5.13"
