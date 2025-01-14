@@ -8,6 +8,7 @@
     
     <div 
       class="drop-zone" 
+      @click="uploadImages"
       @dragover.prevent="handleDragOver"
       @dragleave.prevent="handleDragLeave"
       @drop.prevent="handleDrop"
