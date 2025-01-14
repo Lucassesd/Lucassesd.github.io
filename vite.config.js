@@ -4,10 +4,15 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: './', // 确保使用相对路径
+  base: './', // 改回相对路径
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: './index.html'  // 添加这行，明确指定入口文件
+      }
+    }
   }
 }) 
